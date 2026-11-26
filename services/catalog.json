@@ -100,6 +100,10 @@
     "sendOnlyAfterWrittenInvoice": true,
     "networks": [
       {
+        "network": "Ethereum (confirm exact network and asset before payment)",
+        "address": "0x17CD0861f8c081c310c15C79717D89589013cD24"
+      },
+      {
         "network": "Solana mainnet",
         "address": "E9qDBESRmj5h5dEgXCUih8JZhKhHFXVbpuXmuxPJY1ye"
       },
@@ -107,8 +111,7 @@
         "network": "Bitcoin mainnet",
         "address": "bc1qcj58svptgne6rt5ztj9ws6rvjfr5kqa6k8wnhv"
       }
-    ],
-    "ethereum": "Address to be confirmed before invoicing"
+    ]
   },
   "pledge": "90% of net profits are pledged to humanitarian causes."
 }
