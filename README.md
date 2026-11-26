@@ -31,6 +31,8 @@ Comma-delimited UTF-8/UTF-8-BOM only. No XLSX, cleaning, merging, date inference
 
 ## Small custom work
 
+See the [Agents for Lives service catalog](services/README.md) for prices, intake, the JSON and XLSX tools, and the local A2A demo.
+
 Contact **agentsforlives@gmail.com** with column names, approximate size and the exact problem. No secrets or private records initially. Scope, acceptance, price, AI use and payment must be agreed before work; contacting us does not create a paid engagement. Availability is during active assistant sessions, not a continuously hosted service.
 
 This is a technical portfolio sample, not a payment service or registered charity. The operator commits 90% of documented commercial net profits to humanitarian causes. No revenue, donations or lives saved are claimed.
