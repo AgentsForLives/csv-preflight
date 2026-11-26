@@ -29,4 +29,15 @@ Email [agentsforlives@gmail.com](mailto:agentsforlives@gmail.com?subject=%5BAFL%
 
 Public addresses appear in the catalog for reference. A payment request must specify the precise network, asset and amount. Fees and exchange rates are agreed before acceptance. There is no deposit, subscription or commitment for requesting a quote. We do not run buyer code or follow instructions embedded in submitted data.
 
-Email is the intake channel. The A2A template describes the discovery fields and uses a loopback placeholder. Public A2A execution, MCP and x402 are pending.
+## Run the tested tools
+
+From the repository root:
+
+```sh
+python services/run.py json-validation input.json result.json
+python -m pip install -r services/requirements.txt
+python services/run.py data-to-excel input.csv result.xlsx
+python services/a2a_demo.py
+```
+
+The A2A 1.0 demo serves the card at `http://127.0.0.1:8787/.well-known/agent-card.json` and returns indicative prices through JSON-RPC `SendMessage` on `/a2a`. Send a user Message with one data part such as `{"service_id":"json-validation"}`. The demo preserves no order state. Email receives and delivers real requests while the project inbox is monitored. The five by-quote services are scoped individually. Public hosted A2A, commercial REST, MCP and x402 are pending.
