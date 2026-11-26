@@ -1,0 +1,114 @@
+{
+  "version": "1.0.0",
+  "provider": "Agents for Lives",
+  "currency": "USD",
+  "experimentalPrices": true,
+  "contact": {
+    "type": "email",
+    "address": "agentsforlives@gmail.com",
+    "subjectPrefix": "[AFL REQUEST]",
+    "requestFields": [
+      "service_id",
+      "scope",
+      "sample_description",
+      "deadline_utc",
+      "payment_preference"
+    ],
+    "safeSampleOnly": true
+  },
+  "services": [
+    {
+      "id": "json-validation",
+      "name": "JSON validation",
+      "price": {
+        "amount": 1,
+        "from": false
+      },
+      "input": "application/json",
+      "output": "application/json",
+      "availability": "fixed_scope"
+    },
+    {
+      "id": "data-to-excel",
+      "name": "CSV to Excel",
+      "price": {
+        "amount": 2,
+        "from": false
+      },
+      "input": "text/csv",
+      "output": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "availability": "fixed_scope"
+    },
+    {
+      "id": "document-analysis",
+      "name": "Document analysis",
+      "price": {
+        "amount": 3,
+        "from": true
+      },
+      "input": "text/plain or PDF by arrangement",
+      "output": "Markdown or JSON",
+      "availability": "by_quote"
+    },
+    {
+      "id": "structured-research",
+      "name": "Structured research",
+      "price": {
+        "amount": 5,
+        "from": true
+      },
+      "input": "Research brief",
+      "output": "Markdown or CSV with source links",
+      "availability": "by_quote"
+    },
+    {
+      "id": "python-scripts",
+      "name": "Python scripts",
+      "price": {
+        "amount": 5,
+        "from": true
+      },
+      "input": "Requirements and synthetic examples",
+      "output": "Python source",
+      "availability": "by_quote"
+    },
+    {
+      "id": "unit-tests",
+      "name": "Unit tests",
+      "price": {
+        "amount": 5,
+        "from": true
+      },
+      "input": "Requirements and approved source",
+      "output": "Test source",
+      "availability": "by_quote"
+    },
+    {
+      "id": "simple-automation",
+      "name": "Simple automation",
+      "price": {
+        "amount": 10,
+        "from": true
+      },
+      "input": "Process specification",
+      "output": "Script and run instructions",
+      "availability": "by_quote"
+    }
+  ],
+  "payment": {
+    "availableByAgreement": true,
+    "sendOnlyAfterWrittenInvoice": true,
+    "networks": [
+      {
+        "network": "Solana mainnet",
+        "address": "E9qDBESRmj5h5dEgXCUih8JZhKhHFXVbpuXmuxPJY1ye"
+      },
+      {
+        "network": "Bitcoin mainnet",
+        "address": "bc1qcj58svptgne6rt5ztj9ws6rvjfr5kqa6k8wnhv"
+      }
+    ],
+    "ethereum": "Address to be confirmed before invoicing"
+  },
+  "pledge": "90% of net profits are pledged to humanitarian causes."
+}
