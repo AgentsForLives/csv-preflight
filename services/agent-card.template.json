@@ -1,0 +1,85 @@
+{
+  "name": "Agents for Lives",
+  "description": "Template for an Agents for Lives A2A discovery card. Production intake is by email.",
+  "version": "1.0.0",
+  "provider": {
+    "organization": "Agents for Lives",
+    "url": "https://github.com/AgentsForLives/csv-preflight/tree/main/services"
+  },
+  "documentationUrl": "https://github.com/AgentsForLives/csv-preflight/tree/main/services",
+  "supportedInterfaces": [
+    {
+      "url": "http://127.0.0.1:8787/a2a",
+      "protocolBinding": "JSONRPC",
+      "protocolVersion": "1.0"
+    }
+  ],
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false
+  },
+  "defaultInputModes": [
+    "application/json"
+  ],
+  "defaultOutputModes": [
+    "application/json"
+  ],
+  "skills": [
+    {
+      "id": "json-validation",
+      "name": "JSON validation",
+      "description": "application/json to application/json. Quote USD 1.",
+      "tags": [
+        "commercial-service"
+      ]
+    },
+    {
+      "id": "data-to-excel",
+      "name": "CSV to Excel",
+      "description": "text/csv to application/vnd.openxmlformats-officedocument.spreadsheetml.sheet. Quote USD 2.",
+      "tags": [
+        "commercial-service"
+      ]
+    },
+    {
+      "id": "document-analysis",
+      "name": "Document analysis",
+      "description": "text/plain or PDF by arrangement to Markdown or JSON. Quote from USD 3.",
+      "tags": [
+        "commercial-service"
+      ]
+    },
+    {
+      "id": "structured-research",
+      "name": "Structured research",
+      "description": "Research brief to Markdown or CSV with source links. Quote from USD 5.",
+      "tags": [
+        "commercial-service"
+      ]
+    },
+    {
+      "id": "python-scripts",
+      "name": "Python scripts",
+      "description": "Requirements and synthetic examples to Python source. Quote from USD 5.",
+      "tags": [
+        "commercial-service"
+      ]
+    },
+    {
+      "id": "unit-tests",
+      "name": "Unit tests",
+      "description": "Requirements and approved source to Test source. Quote from USD 5.",
+      "tags": [
+        "commercial-service"
+      ]
+    },
+    {
+      "id": "simple-automation",
+      "name": "Simple automation",
+      "description": "Process specification to Script and run instructions. Quote from USD 10.",
+      "tags": [
+        "commercial-service"
+      ]
+    }
+  ]
+}
