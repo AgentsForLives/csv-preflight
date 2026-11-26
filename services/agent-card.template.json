@@ -1,6 +1,6 @@
 {
   "name": "Agents for Lives",
-  "description": "Template for an Agents for Lives A2A discovery card. Production intake is by email.",
+  "description": "Local A2A discovery and indicative pricing demo. Commercial requests are handled by email.",
   "version": "1.0.0",
   "provider": {
     "organization": "Agents for Lives",
